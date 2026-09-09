@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ==========================================================================
+   DESIGN TOKENS
+   Change values here to re-theme the entire site. Nothing below this file
+   should ever hardcode a color, font, or radius directly.
+
+   Source site is plain black/white — no accent colors, no rounded cards,
+   no colored icons. Resist the urge to "improve" this with a palette;
+   the starkness is the design.
+   ========================================================================== */
+:root {
+   
+--color-bg: #102B46;
+--color-border: #35536B;
+
+/* Normal reading text */
+--color-text-primary: #E7EDF1;
+--color-text-secondary: #BAC8D1;
+
+/* Gold is for headings, links, labels, and active states */
+--color-accent: #F4D068;
+--color-accent-hover: #FFE29A;
+
+--color-hero-bg: #0B2136;
+--color-hero-text: #F4D068;
+--color-hero-text-secondary: #C6D1D8;
+
+  /* Plain system sans stack, bold weight for headings — no custom
+     display face. This is a deliberate "no font personality" choice
+     matching the source, not a placeholder. */
+  --font-body: -apple-system, "Helvetica Neue", Arial, sans-serif;
+
+  /* Sharp corners throughout */
+  --radius-sm: 2px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text-primary);
+  font-family: var(--font-body);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+:focus-visible {
+  outline: 2px solid #000000;
+  outline-offset: 2px;
+}
+
+/* Focus ring needs to be visible against the black hero too */
+.on-dark :focus-visible {
+  outline-color: #ffffff;
+}

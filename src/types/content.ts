@@ -1,0 +1,76 @@
+// Every piece of copy, every link, and every image reference on the site
+// is typed here, then supplied by src/config/siteConfig.ts. Components
+// only ever consume these shapes as props — they never import copy
+// directly, so content can be swapped (or later fetched from a CMS/API)
+// without touching layout code.
+
+export type LucideIconName = "Linkedin" | "Github" | "GraduationCap"  |  "DevPost";
+
+export interface NavItem {
+  label: string;
+  href: string;
+}
+
+export interface SocialLink {
+  label: string;
+  href: string;
+  icon: LucideIconName;
+}
+
+export interface ImageAsset {
+  src: string;
+  alt: string;
+  /** width / height, used to reserve layout space and avoid shift */
+  aspectRatio: `${number} / ${number}`;
+}
+
+export interface HeroContent {
+  greeting: string; // e.g. "Hi, I'm"
+  name: string;
+  subheading: string;
+  floatingImage: ImageAsset;
+}
+
+export interface BioContent {
+  heading: string; // "An Engineer on a Mission."
+  paragraphs: string[];
+  ctaLabel: string;
+  ctaHref: string;
+  photo: ImageAsset;
+  photoCaption: string;
+}
+
+export interface MissionLink {
+  label: string;
+  url: string;
+}
+
+export interface MissionItem {
+  id: string;
+  title: string;
+  description: string;
+
+  // Optional — not every timeline item needs an image
+  image?: string;
+
+  // Optional — a project can have multiple links
+  links?: MissionLink[];
+}
+
+export interface SiteConfig {
+  meta: {
+    title: string;
+  };
+  brandName: string;
+  nav: {
+    items: NavItem[];
+  };
+  hero: HeroContent;
+  bio: BioContent;
+  missionSectionHeading: string;
+  missions: MissionItem[];
+  social: SocialLink[];
+  footer: {
+    copyrightLine: string;
+  };
+}
