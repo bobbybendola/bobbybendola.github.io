@@ -52,7 +52,7 @@ export interface MissionItem {
   description: string;
   image?: string;
   icon?: string;
-  links?: MissionLink[];
+  links?: string;
 }
 
 export interface SiteConfig {

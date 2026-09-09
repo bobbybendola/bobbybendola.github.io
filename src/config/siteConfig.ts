@@ -1,9 +1,16 @@
 import type { SiteConfig } from "@/types/content";
 import chemECAR from "../assets/images/chem_e_car/chem_e_car_team25.jpg";
+import chemEcar_logo from "../assets/images/chem_e_car/chem_e_car_at_uci_logo.jpeg";
+
 import ieeeOPS from "../assets/images/ieee/ieee_ops.jpg";
+
 import solarCar from "../assets/images/solar_car/compressed team photo.jpg";
+import solarCarCelebrateUCI from "../assets/images/solar_car/celebrate_uci.jpg";
+
 import esc from "../assets/images/esc/esc_lifetank25_4.jpg";
-import esc2 from "../assets/images/esc/esc_lifetank25_2.jpg";
+import esc2 from "../assets/images/esc/esc_lifetank25_1.jpg";
+
+import asic from "../assets/images/landing/ASIC-Design-2.jpg";
 
 
 
@@ -39,11 +46,11 @@ export const siteConfig: SiteConfig = {
     greeting: "Hi, I'm",
     name: "Steven Kuzhipala",
     subheading:
-      ".",
+      "",
     floatingImage: {
-      src: "https://placehold.co/160x200/000000/666666?text=%20",
-      alt: "Astronaut in an EVA suit, floating",
-      aspectRatio: "4 / 5",
+      src: asic,
+      alt: "ASIC Waveform close up ",
+      aspectRatio: "16 / 9",
     },
   },
 
@@ -66,11 +73,11 @@ export const siteConfig: SiteConfig = {
     // Placeholder — swap for the real photo (do not hotlink someone
     // else's live site asset).
     photo: {
-      src: "https://placehold.co/700x520/e5e5e5/999999?text=Photo",
-      alt: "Steven Kuzhipala at Lab",
+      src: solarCarCelebrateUCI,
+      alt: "Celebrate UCI 2025",
       aspectRatio: "4 / 3",
     },
-    photoCaption: "On the pool deck of the NBL!",
+    photoCaption: "At Celebrate UCI 2025 for Solar Car!",
   },
 
   missionSectionHeading: "Experience",
@@ -81,7 +88,9 @@ export const siteConfig: SiteConfig = {
       title: "Embedded Systems Engineer — UCI AIChE Chem-E Car",
       description:
         "Developed C++ control firmware integrating color sensors, motor drivers, and linear actuators. Designed and assembled the Luminol v1 custom PCB and optimized I2C communication to cut sensor latency by 50%.",
-      image: chemECAR 
+      image: chemECAR , 
+      icon: chemEcar_logo  ,
+      links: "https://www.aicheuci.org/chem-e-projects/chem-e-car"
     },
     {
       id: "motor-engineer-zotsun",

@@ -5,6 +5,50 @@ interface MissionCellProps {
   index: number;
 }
 
+interface MissionImageProps {
+  mission: MissionItem;
+}
+
+function MissionImage({ mission }: MissionImageProps) {
+  if (!mission.image) return null;
+
+  return (
+    <div className="relative overflow-hidden rounded-lg">
+      <img
+        src={mission.image}
+        alt={mission.title}
+        className="w-full rounded-lg object-cover"
+      />
+
+      {/* Small linked organization icon in the image's top-right corner */}
+      {mission.icon && mission.links && (
+        <a
+          href={mission.links}
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label={`Visit ${mission.title}`}
+          title={`Visit ${mission.title}`}
+          className="
+            absolute right-3 top-3
+            rounded-full bg-white/95 p-2
+            shadow-md
+            transition-all duration-200
+            hover:scale-110 hover:bg-white
+            focus:outline-none focus:ring-2
+            focus:ring-text-primary focus:ring-offset-2
+          "
+        >
+          <img
+            src={mission.icon}
+            alt=""
+            className="h-10 w-10 rounded-full object-cover"
+          />
+        </a>
+      )}
+    </div>
+  );
+}
+
 export function MissionCell({ mission, index }: MissionCellProps) {
   const isLeft = index % 2 === 0;
 
@@ -34,13 +78,7 @@ export function MissionCell({ mission, index }: MissionCellProps) {
           </>
         ) : (
           /* Image for right-side experience */
-          mission.image && (
-            <img
-              src={mission.image}
-              alt={mission.title}
-              className="w-full rounded-lg object-cover"
-            />
-          )
+          <MissionImage mission={mission} />
         )}
       </div>
 
@@ -65,13 +103,7 @@ export function MissionCell({ mission, index }: MissionCellProps) {
           </>
         ) : (
           /* Image for left-side experience */
-          mission.image && (
-            <img
-              src={mission.image}
-              alt={mission.title}
-              className="w-full rounded-lg object-cover"
-            />
-          )
+          <MissionImage mission={mission} />
         )}
       </div>
     </div>

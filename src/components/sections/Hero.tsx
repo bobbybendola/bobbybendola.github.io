@@ -18,7 +18,7 @@ export function Hero({ content }: HeroProps) {
             src={content.floatingImage.src}
             alt={content.floatingImage.alt}
             style={{ aspectRatio: content.floatingImage.aspectRatio }}
-            className="w-24 object-contain opacity-90 md:w-28"
+            className="w-140 object-contain opacity-90 md:w-280"
           />
         </div>
 
@@ -31,13 +31,6 @@ export function Hero({ content }: HeroProps) {
           <p className="max-w-[52ch] text-sm text-hero-text-secondary md:text-base">{content.subheading}</p>
         </div>
       </Container>
-
-      {/* Faint atmosphere-glow seam, matching the source's transition into the white section */}
-      <div
-        aria-hidden="true"
-        className="pointer-events-none absolute inset-x-0 bottom-0 h-16"
-        style={{ background: "linear-gradient(to top, rgba(90, 120, 190, 0.35), transparent)" }}
-      />
     </section>
   );
 }
