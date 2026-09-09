@@ -93,7 +93,7 @@ export const siteConfig: SiteConfig = {
       id: "technical-director-esc",
       title: "Technical Director — UCI Engineering Student Council",
       description:
-        "Leading web development for the ESC website and the EScan attendance management platform using Next.js, QR-based registration, and automated backend infrastructure[cite: 2].",
+        "Leading web development for the ESC website and the EScan attendance management platform using Next.js, QR-based registration, and automated backend infrastructure.",
     },
     {
       id: "education",

@@ -1,4 +1,4 @@
-import React from "react";
+
 import type { LucideProps } from "lucide-react";
 
 export function DevpostIcon({ size = 24, ...props }: LucideProps) {
