@@ -16,11 +16,14 @@ export function MissionCell({ mission, index }: MissionCellProps) {
       {/* Left side */}
       <div
         className={`px-6 md:px-10 ${
-          isLeft ? "pr-10 text-right md:pr-16" : "invisible"
+          isLeft
+            ? "pr-10 text-right md:pr-16"
+            : "pl-10 text-left md:pl-16"
         }`}
       >
-        {isLeft && (
+        {isLeft ? (
           <>
+            {/* Experience content */}
             <h3 className="text-lg font-bold text-text-primary md:text-xl">
               {mission.title}
             </h3>
@@ -29,17 +32,29 @@ export function MissionCell({ mission, index }: MissionCellProps) {
               {mission.description}
             </p>
           </>
+        ) : (
+          /* Image for right-side experience */
+          mission.image && (
+            <img
+              src={mission.image}
+              alt={mission.title}
+              className="w-full rounded-lg object-cover"
+            />
+          )
         )}
       </div>
 
       {/* Right side */}
       <div
         className={`px-6 md:px-10 ${
-          !isLeft ? "pl-10 text-left md:pl-16" : "invisible"
+          !isLeft
+            ? "pl-10 text-left md:pl-16"
+            : "pr-10 text-right md:pr-16"
         }`}
       >
-        {!isLeft && (
+        {!isLeft ? (
           <>
+            {/* Experience content */}
             <h3 className="text-lg font-bold text-text-primary md:text-xl">
               {mission.title}
             </h3>
@@ -48,6 +63,15 @@ export function MissionCell({ mission, index }: MissionCellProps) {
               {mission.description}
             </p>
           </>
+        ) : (
+          /* Image for left-side experience */
+          mission.image && (
+            <img
+              src={mission.image}
+              alt={mission.title}
+              className="w-full rounded-lg object-cover"
+            />
+          )
         )}
       </div>
     </div>
