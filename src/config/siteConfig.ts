@@ -1,5 +1,9 @@
 import type { SiteConfig } from "@/types/content";
 import chemECAR from "../assets/images/chem_e_car/chem_e_car_team25.jpg";
+import ieeeOPS from "../assets/images/ieee/ieee_ops.jpg";
+import solarCar from "../assets/images/solar_car/compressed team photo.jpg";
+import esc from "../assets/images/esc/esc_lifetank25_4.jpg";
+import esc2 from "../assets/images/esc/esc_lifetank25_2.jpg";
 
 
 
@@ -84,6 +88,7 @@ export const siteConfig: SiteConfig = {
       title: "Motor Engineer — UCI ZotSun Solar Racing",
       description:
         "Assembled, soldered, and stress-tested motor-contactor PCBs from Altium schematics. Integrated high-voltage power systems across a 96V battery, motor controller, and MPPTs.",
+      image: solarCar
     },
 
     {
@@ -91,6 +96,7 @@ export const siteConfig: SiteConfig = {
       title: "Embedded Systems Lab Instructor — UCI IEEE OPS",
       description:
         "Instructed engineering students in low-level C++, ESP32 peripherals, communication protocols, PCB-build-up, soldering, and hardware debugging. Deliever lectures on these topics periodically, creating engaging lecture content and activties",
+        image: ieeeOPS  
     },
 
     {
@@ -98,12 +104,14 @@ export const siteConfig: SiteConfig = {
       title: "Technical Director — UCI Engineering Student Council",
       description:
         "Leading web development for the ESC website and the EScan attendance management platform using Next.js, QR-based registration, and automated backend infrastructure.",
+      image: esc 
     },
     {
       id: "education",
       title: "Education — UC Irvine",
       description:
         "B.S. Computer Engineering. Dean's Honor List.",
+        image: esc2  
     },
   ],
 
