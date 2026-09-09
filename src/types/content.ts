@@ -43,17 +43,15 @@ export interface BioContent {
 export interface MissionLink {
   label: string;
   url: string;
+  icon?: string;
 }
 
 export interface MissionItem {
   id: string;
   title: string;
   description: string;
-
-  // Optional — not every timeline item needs an image
   image?: string;
-
-  // Optional — a project can have multiple links
+  icon?: string;
   links?: MissionLink[];
 }
 

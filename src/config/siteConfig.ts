@@ -1,4 +1,7 @@
 import type { SiteConfig } from "@/types/content";
+import chemECAR from "../assets/images/chem_e_car/chem_e_car_team25.jpg";
+
+
 
 /**
  * siteConfig.ts
@@ -74,6 +77,7 @@ export const siteConfig: SiteConfig = {
       title: "Embedded Systems Engineer — UCI AIChE Chem-E Car",
       description:
         "Developed C++ control firmware integrating color sensors, motor drivers, and linear actuators. Designed and assembled the Luminol v1 custom PCB and optimized I2C communication to cut sensor latency by 50%.",
+      image: chemECAR 
     },
     {
       id: "motor-engineer-zotsun",
