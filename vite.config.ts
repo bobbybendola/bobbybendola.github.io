@@ -8,7 +8,7 @@ import { fileURLToPath, URL } from "node:url";
 // CommonJS-only global), so we don't reach for it at all here.
 export default defineConfig({
   plugins: [react()],
-  base: "/steven-k-CompE/",
+  base: "/",
   resolve: {
     alias: {
       "@": fileURLToPath(new URL("./src", import.meta.url)),
