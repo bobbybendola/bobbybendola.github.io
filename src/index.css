@@ -13,20 +13,18 @@
    ========================================================================== */
 :root {
    
---color-bg: #102B46;
---color-border: #35536B;
+  --color-bg: #0D0D0D;
+  --color-border: #303030;
+  --color-text-primary: #F0F0F0;
+  --color-text-secondary: #C8C8C8;
 
-/* Normal reading text */
---color-text-primary: #E7EDF1;
---color-text-secondary: #BAC8D1;
+  --color-hero-bg: #080808;
+  --color-hero-text: #F5F5F5;
+  --color-hero-text-secondary: #D0D0D0;
 
-/* Gold is for headings, links, labels, and active states */
---color-accent: #F4D068;
---color-accent-hover: #FFE29A;
-
---color-hero-bg: #0B2136;
---color-hero-text: #F4D068;
---color-hero-text-secondary: #C6D1D8;
+  --color-accent: #6E98D8;
+  --color-accent-hover: #82A9E2;
+  --color-accent-text: #FFFFFF;
 
   /* Plain system sans stack, bold weight for headings — no custom
      display face. This is a deliberate "no font personality" choice
@@ -59,11 +57,10 @@ body {
 }
 
 :focus-visible {
-  outline: 2px solid #000000;
-  outline-offset: 2px;
+  outline: 2px solid #82A9E2;
+  outline-offset: 3px;
 }
 
-/* Focus ring needs to be visible against the black hero too */
 .on-dark :focus-visible {
-  outline-color: #ffffff;
+  outline-color: #9DBBE9;
 }
