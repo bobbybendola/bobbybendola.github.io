@@ -1,14 +1,18 @@
 import type { SiteConfig } from "@/types/content";
+
 import chemECAR from "../assets/images/chem_e_car/chem_e_car_team25.jpg";
 import chemEcar_logo from "../assets/images/chem_e_car/chem_e_car_at_uci_logo.jpeg";
 
 import ieeeOPS from "../assets/images/ieee/ieee_ops.jpg";
+import ieeeLogo from "../assets/images/ieee/ieee_logoName.png";
 
+import solarCarIcon from "../assets/images/solar_car/Solar Car Icon.png";
 import solarCar from "../assets/images/solar_car/compressed team photo.jpg";
 import solarCarCelebrateUCI from "../assets/images/solar_car/celebrate_uci.jpg";
 
 import esc from "../assets/images/esc/esc_lifetank25_4.jpg";
 import esc2 from "../assets/images/esc/esc_lifetank25_1.jpg";
+import esc_logo from "../assets/images/esc/esc_logo.png"
 
 import asic from "../assets/images/landing/ASIC-Design-2.jpg";
 
@@ -97,7 +101,9 @@ export const siteConfig: SiteConfig = {
       title: "Motor Engineer — UCI ZotSun Solar Racing",
       description:
         "Assembled, soldered, and stress-tested motor-contactor PCBs from Altium schematics. Integrated high-voltage power systems across a 96V battery, motor controller, and MPPTs.",
-      image: solarCar
+      image: solarCar, 
+      icon: solarCarIcon   ,
+      links: "https://www.ucisolarcar.org/"
     },
 
     {
@@ -105,7 +111,9 @@ export const siteConfig: SiteConfig = {
       title: "Embedded Systems Lab Instructor — UCI IEEE OPS",
       description:
         "Instructed engineering students in low-level C++, ESP32 peripherals, communication protocols, PCB-build-up, soldering, and hardware debugging. Deliever lectures on these topics periodically, creating engaging lecture content and activties",
-        image: ieeeOPS  
+        image: ieeeOPS  , 
+        icon: ieeeLogo, 
+        links: "https://ieee.ics.uci.edu/ops/"
     },
 
     {
@@ -113,7 +121,9 @@ export const siteConfig: SiteConfig = {
       title: "Technical Director — UCI Engineering Student Council",
       description:
         "Leading web development for the ESC website and the EScan attendance management platform using Next.js, QR-based registration, and automated backend infrastructure.",
-      image: esc 
+      image: esc, 
+       icon: esc_logo, 
+       links: "https://esc.eng.uci.edu/" 
     },
     {
       id: "education",
