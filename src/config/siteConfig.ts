@@ -143,4 +143,12 @@ export const siteConfig: SiteConfig = {
   footer: {
     copyrightLine: "©2026 — Steven Kuzhipala",
   },
+
+
+contact: {
+  title: "Get in Touch",
+  description: "Always open to connect.",
+  email: "steven.k.biji@gmail.com",
+},
+
 };

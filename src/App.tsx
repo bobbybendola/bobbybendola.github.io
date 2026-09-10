@@ -4,6 +4,7 @@ import { Footer } from "@/components/layout/Footer";
 import { Hero } from "@/components/sections/Hero";
 import { Bio } from "@/components/sections/Bio";
 import { MissionGrid } from "@/components/sections/MissionGrid";
+import  { Contact } from "@/components/sections/Contact";
 
 
 export default function App() {
@@ -15,7 +16,7 @@ export default function App() {
         <Hero content={siteConfig.hero} />
         <Bio content={siteConfig.bio} />
         <MissionGrid heading={siteConfig.missionSectionHeading} missions={siteConfig.missions} />
-        {/* // TODO(sections): drop a new <Section /> here for e.g. a timeline or testimonials */}
+        <Contact content={siteConfig.contact} />
       </main>
 
       <Footer items={siteConfig.nav.items} social={siteConfig.social} copyrightLine={siteConfig.footer.copyrightLine} />

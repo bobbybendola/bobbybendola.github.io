@@ -71,4 +71,11 @@ export interface SiteConfig {
   footer: {
     copyrightLine: string;
   };
+  contact: ContactContent;
+}
+
+export interface ContactContent {
+  title: string;
+  description: string;
+  email: string;
 }
