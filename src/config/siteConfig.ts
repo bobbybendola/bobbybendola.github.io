@@ -24,6 +24,7 @@ import solarCarFullSize from "../assets/images/solar_car/full_size_car.jpg";
 import esc from "../assets/images/esc/esc_lifetank25_4.jpg";
 import esc2 from "../assets/images/esc/esc_lifetank25_1.jpg";
 import esc_logo from "../assets/images/esc/esc_logo.png"
+import escLIfeTankWin  from "../assets/images/esc/esc_lifetank25_3.jpg";
 
 import asic from "../assets/images/landing/ASIC-Design-2.jpg";
 
@@ -400,7 +401,7 @@ export const siteConfig: SiteConfig = {
         id: "ESC LifeTank ",
         title: "FingerPath- Winner of ESC LifeTank Engineering Pitch Competition", 
         caption: "Pitched and secured a first-place finish at UC's Engineering Student Council startup competition with team FingerPath, developing a functional prototype of a wearable haptic navigation glove that translates mapping cues into tactile hand vibrations as an intuitive alternative to traditional screen and audio displays.",
-        images: [ {src: pipedowntrain  , alt: " berkAI pipedown training" , aspectRatio: " 16 / 9" }
+        images: [ {src: escLIfeTankWin   , alt: " escLIfeTankWin " , aspectRatio: " 16 / 9" }
                   
         ], 
         what: [],

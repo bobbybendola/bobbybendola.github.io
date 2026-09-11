@@ -16,7 +16,7 @@ export function Bio({ content }: BioProps) {
 
           <div className="flex flex-col gap-4">
             {content.paragraphs.map((paragraph, index) => (
-              <p key={index} className="max-w-[60ch] text-sm leading-relaxed text-text-secondary">
+              <p key={index} className="max-w-[60ch] text-lg leading-relaxed text-text-secondary">
                 {paragraph}
               </p>
             ))}
@@ -24,7 +24,7 @@ export function Bio({ content }: BioProps) {
 
           <a
             href={content.ctaHref}
-            className="mt-2 inline-flex w-fit items-center rounded-sm border border-text-primary px-5 py-2.5 text-sm font-medium text-text-primary transition-opacity hover:opacity-60"
+            className="mt-2 inline-flex w-fit items-center rounded-sm border border-text-primary px-5 py-2.5 text-base font-medium text-text-primary transition-opacity hover:opacity-60"
           >
             {content.ctaLabel}
           </a>

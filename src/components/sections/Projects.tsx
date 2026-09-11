@@ -64,7 +64,7 @@ function ProjectBlock({ project, compact = false }: { project: ProjectItem; comp
       </div>
 
       {project.caption.trim() && (
-        <p className="mt-3 max-w-[70ch] text-sm leading-relaxed text-text-secondary">{project.caption}</p>
+        <p className="mt-3 max-w-[70ch] text-lg leading-relaxed text-text-secondary">{project.caption}</p>
       )}
 
       {(what.length > 0 || how.length > 0) && (
