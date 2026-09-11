@@ -13,6 +13,7 @@ import ieee_ws from "../assets/images/ieee/WSpng.png";
 import ieee_mmp3 from "../assets/images/ieee/mmp3.png";
 import ieee_mmp3_sch from "../assets/images/ieee/ieee_mp3_sch.png";
 import ieee_stopWatch from "../assets/images/ieee/OPS_digital_stopwatch_close_up.jpeg";
+import ieee_555piano from "../assets/images/ieee/555_Keyboard .png";
 
 import solarCarIcon from "../assets/images/solar_car/Solar Car Icon.png";
 import solarCar from "../assets/images/solar_car/compressed team photo.jpg";
@@ -60,6 +61,8 @@ export const siteConfig: SiteConfig = {
     { label: "Projects", href: "/projects" },
     { label: "Get in Touch", href: "/#contact" },
   ],
+
+  goatcounterCode: "stevenk",
 
   hero: {
     greeting: "Hi, I'm",
@@ -153,6 +156,7 @@ export const siteConfig: SiteConfig = {
   projects: {
       
     heading: "Projects and Builds",
+    intro: "Currently building with a FPGAs, and focusing on small-scale SIMD optimizations and CUDA programming.",
     labsHeading: "Lab Notes",
     labs: [],
     featured: [
@@ -263,7 +267,7 @@ export const siteConfig: SiteConfig = {
       {
         id: "OPS Rover",
         title: "DT - Capstone_Rover",
-        caption: " A Modified version of the UCI IEEE OPS Rover (25-26) (Featuring Ferb from Phineas and Ferb).",
+        caption: "A Modified version of the UCI IEEE OPS Rover (25-26) (Featuring Ferb from Phineas and Ferb). Developed from breadboard to PCB.",
         images: [ {src: cap_PCB , alt: "cap_PCB" , aspectRatio: " 16 / 9" } ,
                   {src: cap_rover , alt: "cap_rover", aspectRatio: "16 / 9" } 
         ], 
@@ -335,8 +339,7 @@ export const siteConfig: SiteConfig = {
         id: "mini MP3",
         title: "555 Timer Piano",
         caption: "handheld three-key musical keyboard built from initial breadboard verification to a custom PCB layout, modulating the 555 timer IC's oscillating frequency via variable resistance and capacitor discharge rates to produce distinct musical notes.",
-        images: [ {src: ieee_mmp3 , alt: "ieee_mmp3 " , aspectRatio: " 16 / 9" },
-          {src: ieee_mmp3_sch  , alt: "ieee_mmp3 " , aspectRatio: " 16 / 9" }        
+        images: [ {src: ieee_555piano , alt: "ieee_mmp3 " , aspectRatio: " 16 / 9" }     
         ], 
         what: [],
         how: [],
@@ -351,7 +354,7 @@ export const siteConfig: SiteConfig = {
       //Berk AI 
       {
         id: "Berk AI ",
-        title: "Forge - Build, Verify and Save. Winner of Redis Track UC Berkeley  AI Hack 2026", 
+        title: "Forge - 1st place-Redis Track UC Berkeley  AI Hack 2026", 
         caption: "Engineered an AI infrastructure pipeline combining RedisVL HNSW vector search, RedisJSON, and FastAPI to synthesize and verify executable tools with Claude Opus 4, winning 1st place and Best Technical Implementation at the UC Berkeley AI Hackathon. ",
         images: [ {src:  berkAI   , alt: " berkAI " , aspectRatio: " 16 / 9" }
                   
@@ -388,6 +391,28 @@ export const siteConfig: SiteConfig = {
           { name: "Aditi Varia", href: "https://www.linkedin.com/in/aditi-varia/" }, 
           { name: "Shrujan Sriram", href: "https://www.linkedin.com/in/shrujansriram/" }, 
            { name: "Abhinav Gondesi", href: "https://www.linkedin.com/in/abhinav-gondesi-b5696b303/" }
+
+        ],
+      }, 
+
+      //ESC LifeTank FingerPath 
+      {
+        id: "ESC LifeTank ",
+        title: "FingerPath- Winner of ESC LifeTank Engineering Pitch Competition", 
+        caption: "Pitched and secured a first-place finish at UC's Engineering Student Council startup competition with team FingerPath, developing a functional prototype of a wearable haptic navigation glove that translates mapping cues into tactile hand vibrations as an intuitive alternative to traditional screen and audio displays.",
+        images: [ {src: pipedowntrain  , alt: " berkAI pipedown training" , aspectRatio: " 16 / 9" }
+                  
+        ], 
+        what: [],
+        how: [],
+        links: [
+          { label: "LinkedIn", href: "https://lnkd.in/p/gmEtqC-T" }
+        ],
+        teammates: [
+          { name: "Anthony Heang", href: "https://www.linkedin.com/in/anthony-heang/" }, 
+          { name: "Andrew Heang", href: "https://www.linkedin.com/in/andrew-heang/" }, 
+           { name: "Shrish Potla", href: "https://www.linkedin.com/in/shrishpotla/" },
+           { name: "Tobias Fabro", href: "https://www.linkedin.com/in/tobias-fabro/" } 
 
         ],
       }, 

@@ -135,7 +135,11 @@ export function Projects({ content }: ProjectsProps) {
   return (
     <section className="bg-bg py-16 md:py-20">
       <Container>
-        <h2 className="mb-4 text-2xl font-bold text-text-primary md:text-3xl">{content.heading}</h2>
+        <h2 className="text-2xl font-bold text-text-primary md:text-3xl">{content.heading}</h2>
+
+        {content.intro.trim() && (
+          <p className="mt-4 mb-2 max-w-[70ch] text-sm leading-relaxed text-text-secondary">{content.intro}</p>
+        )}
 
         <div>
           {content.featured.map((project) => (

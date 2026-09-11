@@ -82,6 +82,7 @@ export interface ProjectItem {
 
 export interface ProjectsContent {
   heading: string;
+  intro: string;
   featured: ProjectItem[];
   labsHeading: string;
   labs: ProjectItem[];
@@ -93,6 +94,8 @@ export interface SiteConfig {
   };
   brandName: string;
   nav: NavItem[];
+  /** GoatCounter site code, e.g. "stevenk" from https://stevenk.goatcounter.com — leave "" until you create the site */
+  goatcounterCode: string;
   hero: HeroContent;
   bio: BioContent;
   missionSectionHeading: string;
