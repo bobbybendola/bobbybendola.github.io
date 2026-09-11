@@ -7,7 +7,7 @@ interface BioProps {
 
 export function Bio({ content }: BioProps) {
   return (
-    <section aria-labelledby="bio-heading" className="bg-bg py-16 md:py-20">
+    <section id="bio" aria-labelledby="bio-heading" className="scroll-mt-4 bg-bg py-16 md:py-20">
       <Container className="grid grid-cols-1 gap-10 md:grid-cols-2 md:gap-16">
         <div className="flex flex-col gap-5">
           <h2 id="bio-heading" className="text-2xl font-bold leading-tight text-text-primary md:text-3xl">

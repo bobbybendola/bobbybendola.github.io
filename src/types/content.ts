@@ -55,15 +55,49 @@ export interface MissionItem {
   links?: string;
 }
 
+export interface ProjectImage extends ImageAsset {
+  caption?: string;
+}
+
+export interface ProjectLink {
+  label: string;
+  href: string;
+}
+
+export interface ProjectTeammate {
+  name: string;
+  href: string;
+}
+
+export interface ProjectItem {
+  id: string;
+  title: string;
+  caption: string;
+  images: ProjectImage[];
+  what: string[];
+  how: string[];
+  links: ProjectLink[];
+  teammates: ProjectTeammate[];
+}
+
+export interface ProjectsContent {
+  heading: string;
+  featured: ProjectItem[];
+  labsHeading: string;
+  labs: ProjectItem[];
+}
+
 export interface SiteConfig {
   meta: {
     title: string;
   };
   brandName: string;
+  nav: NavItem[];
   hero: HeroContent;
   bio: BioContent;
   missionSectionHeading: string;
   missions: MissionItem[];
+  projects: ProjectsContent;
   social: SocialLink[];
   footer: {
     copyrightLine: string;

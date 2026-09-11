@@ -10,8 +10,9 @@ interface MissionGridProps {
 export function MissionGrid({ heading, missions }: MissionGridProps) {
   return (
     <section
+      id="experience"
       aria-labelledby="mission-heading"
-      className="border-t border-border bg-bg py-16 md:py-20"
+      className="scroll-mt-4 border-t border-border bg-bg py-16 md:py-20"
     >
       <Container>
         <h2
