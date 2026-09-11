@@ -7,6 +7,12 @@ import lumnin_car_pcb  from "../assets/images/chem_e_car/luminol_car_pcb.png";
 
 import ieeeOPS from "../assets/images/ieee/ieee_ops.jpg";
 import ieeeLogo from "../assets/images/ieee/ieee_logoName.png";
+import cap_PCB from "../assets/images/ieee/capstone_pcbpng.png";
+import cap_rover from "../assets/images/ieee/capstone_rover.jpg";
+import ieee_ws from "../assets/images/ieee/WSpng.png";
+import ieee_mmp3 from "../assets/images/ieee/mmp3.png";
+import ieee_mmp3_sch from "../assets/images/ieee/ieee_mp3_sch.png";
+import ieee_stopWatch from "../assets/images/ieee/OPS_digital_stopwatch_close_up.jpeg";
 
 import solarCarIcon from "../assets/images/solar_car/Solar Car Icon.png";
 import solarCar from "../assets/images/solar_car/compressed team photo.jpg";
@@ -26,7 +32,8 @@ import riscv_2 from "../assets/images/RISC_V/Waveform_checks.png";
 import FRND_arch from "../assets/images/FRND/arch_diagram.png";
 import FRND_drone from "../assets/images/FRND/drone_picture.png";
 
-
+import berkAI from "../assets/images/hacks/berk_ai_26.jpg";
+import pipedowntrain from "../assets/images/hacks/training_pipe_defect.png";
 
 /**
  * siteConfig.ts
@@ -145,10 +152,6 @@ export const siteConfig: SiteConfig = {
 
   projects: {
       
-      
-    
-
-    
     heading: "Projects and Builds",
     labsHeading: "Lab Notes",
     labs: [],
@@ -223,7 +226,8 @@ export const siteConfig: SiteConfig = {
         how: [],
         links: [
           { label: "GitHub", href: "https://github.com/vrushang1234/FRND" },
-          { label: "DevPost", href: "https://devpost.com/software/frnd-field-neighbouring-relay-data-points" }
+          { label: "DevPost", href: "https://devpost.com/software/frnd-field-neighbouring-relay-data-points" }, 
+          { label: "YouTube", href: "https://www.youtube.com/watch?v=904H0sNUbPI" }
         ],
         teammates: [
           { name: "Vrushang Anand", href: "https://www.linkedin.com/in/vrushang-anand12/" },
@@ -255,29 +259,140 @@ export const siteConfig: SiteConfig = {
         ],
       }, 
 
-      //SolarCar
+      //RC- Rover
       {
-        id: "Solar Car",
-        title: "Solar Car Motor Engineer",
-        caption: "Integrated high-voltage wiring architecture and PCB assemblies for the ZotSun solar racing vehicle, validating circuit continuity and power distribution across a 96V system. Placed 10th of 29 teams in single occupant teams and first to finish scrutineering. ",
-        images: [ {src: solarCarFullSize  , alt: "solarCarFullSize" , aspectRatio: " 16 / 9" } ,
-                  {src: solarCarPowerPCB  , alt: "solarCarPowerPCB", aspectRatio: "16 / 9" } 
+        id: "OPS Rover",
+        title: "DT - Capstone_Rover",
+        caption: " A Modified version of the UCI IEEE OPS Rover (25-26) (Featuring Ferb from Phineas and Ferb).",
+        images: [ {src: cap_PCB , alt: "cap_PCB" , aspectRatio: " 16 / 9" } ,
+                  {src: cap_rover , alt: "cap_rover", aspectRatio: "16 / 9" } 
         ], 
         what: [],
         how: [],
         links: [
-          { label: "UCI Solar Car", href: "https://www.ucisolarcar.org/" }
-          
+          { label: "GitHub", href: "https://github.com/bobbybendola/IEEE_OPS_Capstone_Rover" }, 
+          { label: "YouTube", href: "https://youtube.com/watch/BwKgsygS7Fk" }
         ],
         teammates: [
-          { name: "Vincent Lai", href: "https://www.linkedin.com/in/vincent-lai-b1520030a/" },
-          { name: "Raiche Gutierrez" , href: " https://www.linkedin.com/in/raiche-gutierrez-b0447a2b9/" }, 
-          { name: "Devin Zarate" , href: " https://www.linkedin.com/in/devin-zarate/" }, 
-          { name: "Gina LeRow" , href: "https://www.linkedin.com/in/ginalerow/" }, 
-          { name: "Austin Lee" , href: "https://www.linkedin.com/in/austinzhl/" }
+          { name: "UCI IEEE", href: "https://www.linkedin.com/company/ieee-uci/" }
         ],
-      }
-    
+      }, 
+
+      //Mini-Weather Station
+      {
+        id: "weather-station",
+        title: "Mini Weather Station",
+        caption: "Engineered a portable mini weather station powered by a 9V battery, integrating an AHT20 temperature and humidity sensor via I2C with an LCD interface, and deployed a custom ESP32 Wi-Fi protocol for wireless inter-microcontroller data telemetry..",
+        images: [ {src: ieee_ws, alt: "ieee_ws" , aspectRatio: " 16 / 9" }        
+        ], 
+        what: [],
+        how: [],
+        links: [
+          { label: "UCI IEEE", href: "https://ieee.ics.uci.edu/" }
+        ],
+        teammates: [
+          { name: "UCI IEEE", href: "https://www.linkedin.com/company/ieee-uci/" }
+        ],
+      }, 
+
+      //Mini-digital stopwatch
+      {
+        id: "digital-stopwatch",
+        title: "Digital StopWatch",
+        caption: "Programmed interrupt-driven push-button controls on an ESP32 to eliminate continuous polling, utilizing hardware interrupts on falling edge signals to trigger real-time countdown logic across a TM1637 7-segment display and piezo buzzer.",
+        images: [ {src: ieee_stopWatch, alt: "ieee_stopWatch" , aspectRatio: " 16 / 9" }        
+        ], 
+        what: [],
+        how: [],
+        links: [
+          { label: "GitHub", href: "https://github.com/bobbybendola/IEEE_OPS_Digital-Stopwatch" }
+        ],
+        teammates: [
+          { name: "UCI IEEE", href: "https://www.linkedin.com/company/ieee-uci/" }
+        ],
+      }, 
+
+      //Mini-MP3 player
+      {
+        id: "mini MP3",
+        title: "Standalone Mini MP3 Player",
+        caption: "A mini mp3 player, with functionality to change music with a SD card, play pause and replay music tracks in real-time as well. Utilizing DFPlayer Mini module to store audio files using an SD Card, and uisng HardwareSerial Library for communication over UART on the ESP32.",
+        images: [ {src: ieee_mmp3 , alt: "ieee_mmp3 " , aspectRatio: " 16 / 9" },
+          {src: ieee_mmp3_sch  , alt: "ieee_mmp3 " , aspectRatio: " 16 / 9" }        
+        ], 
+        what: [],
+        how: [],
+        links: [
+          { label: "GitHub", href: "https://github.com/bobbybendola/IEEE_OPS_Mini_MP3_Player" }
+        ],
+        teammates: [
+          { name: "UCI IEEE", href: "https://www.linkedin.com/company/ieee-uci/" }
+        ],
+      }, 
+
+      //555 Timer Piano
+      {
+        id: "mini MP3",
+        title: "555 Timer Piano",
+        caption: "handheld three-key musical keyboard built from initial breadboard verification to a custom PCB layout, modulating the 555 timer IC's oscillating frequency via variable resistance and capacitor discharge rates to produce distinct musical notes.",
+        images: [ {src: ieee_mmp3 , alt: "ieee_mmp3 " , aspectRatio: " 16 / 9" },
+          {src: ieee_mmp3_sch  , alt: "ieee_mmp3 " , aspectRatio: " 16 / 9" }        
+        ], 
+        what: [],
+        how: [],
+        links: [
+          { label: "UCI IEEE", href: "https://ieee.ics.uci.edu/" }
+        ],
+        teammates: [
+          { name: "UCI IEEE", href: "https://www.linkedin.com/company/ieee-uci/" }
+        ],
+      }, 
+
+      //Berk AI 
+      {
+        id: "Berk AI ",
+        title: "Forge - Build, Verify and Save. Winner of Redis Track UC Berkeley  AI Hack 2026", 
+        caption: "Engineered an AI infrastructure pipeline combining RedisVL HNSW vector search, RedisJSON, and FastAPI to synthesize and verify executable tools with Claude Opus 4, winning 1st place and Best Technical Implementation at the UC Berkeley AI Hackathon. ",
+        images: [ {src:  berkAI   , alt: " berkAI " , aspectRatio: " 16 / 9" }
+                  
+        ], 
+        what: [],
+        how: [],
+        links: [
+          { label: "DevPost", href: "https://devpost.com/software/forge-z8v4qm#updates" },
+          { label: "GitHub", href: "https://github.com/bobbybendola/forge-z8v4qm" }, 
+          { label: "Youtube", href: "https://www.youtube.com/watch?v=4K3G6_XONPU" }, 
+        ],
+        teammates: [
+          { name: "Arjun Vivek", href: "https://www.linkedin.com/in/arjun-vivek/" }
+
+        ],
+      }, 
+
+      //pipedown Berk AI 
+      {
+        id: "Berk AI ",
+        title: "Locally trained Kaggle YOLOv8n Pipe Defect CV Model", 
+        caption: "Supported Team PipeDown post UCB AI 2026 by creating an optimized YOLOv8n object detection training on an Apple M4 Mac mini, routing backpropagation through the 10-core GPU via Metal/MPS to achieve high-accuracy pipe defect detection.",
+        images: [ {src: pipedowntrain  , alt: " berkAI pipedown training" , aspectRatio: " 16 / 9" }
+                  
+        ], 
+        what: [],
+        how: [],
+        links: [
+          { label: "DevPost PipeDown", href: "https://devpost.com/software/tbd-nprbw3" },
+          { label: "GitHub", href: "https://github.com/bobbybendola/PipeDefectDectectionModel" }, 
+          { label: "YouTube", href: "https://www.youtube.com/watch?v=AaJa3gm1w9M" }, 
+        ],
+        teammates: [
+          { name: "Aditi Varia", href: "https://www.linkedin.com/in/aditi-varia/" }, 
+          { name: "Shrujan Sriram", href: "https://www.linkedin.com/in/shrujansriram/" }, 
+           { name: "Abhinav Gondesi", href: "https://www.linkedin.com/in/abhinav-gondesi-b5696b303/" }
+
+        ],
+      }, 
+
+
     ],
 
 
