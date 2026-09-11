@@ -17,6 +17,8 @@ function MissionImage({ mission }: MissionImageProps) {
       <img
         src={mission.image}
         alt={mission.title}
+        loading="lazy"
+        decoding="async"
         className="w-full rounded-lg object-cover"
       />
 

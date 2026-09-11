@@ -37,14 +37,7 @@ export const siteConfig: SiteConfig = {
 
   brandName: "Steven Kuzhipala — Computer Engineer, UCI",
 
-  nav: {
-    items: [
-      { label: "About", href: "/about" },
-      { label: "Portfolio", href: "/portfolio" },
-      { label: "Resume", href: "/resume" },
-      { label: "Contact", href: "/contact" },
-    ],
-  },
+//TODO: Need to just add a simple line of quick links
 
   hero: {
     greeting: "Hi, I'm",
@@ -73,7 +66,7 @@ export const siteConfig: SiteConfig = {
   ],
 
     ctaLabel: "Get in Touch",
-    ctaHref: "/contact",
+    ctaHref: "mailto:steven.k.biji@gmail.com",
     // Placeholder — swap for the real photo (do not hotlink someone
     // else's live site asset).
     photo: {

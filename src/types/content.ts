@@ -60,9 +60,6 @@ export interface SiteConfig {
     title: string;
   };
   brandName: string;
-  nav: {
-    items: NavItem[];
-  };
   hero: HeroContent;
   bio: BioContent;
   missionSectionHeading: string;

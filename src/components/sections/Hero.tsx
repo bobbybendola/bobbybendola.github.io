@@ -18,6 +18,7 @@ export function Hero({ content }: HeroProps) {
             src={content.floatingImage.src}
             alt={content.floatingImage.alt}
             style={{ aspectRatio: content.floatingImage.aspectRatio }}
+            decoding="async"
             className="w-140 object-contain opacity-90 md:w-280"
           />
         </div>

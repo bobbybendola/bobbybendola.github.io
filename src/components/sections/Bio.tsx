@@ -36,7 +36,7 @@ export function Bio({ content }: BioProps) {
             style={{ aspectRatio: content.photo.aspectRatio }}
             className="overflow-hidden bg-border"
           >
-            <img src={content.photo.src} alt={content.photo.alt} className="h-full w-full object-cover" loading="lazy" />
+            <img src={content.photo.src} alt={content.photo.alt} className="h-full w-full object-cover" loading="lazy" decoding="async" />
           </div>
           <figcaption className="mt-2 text-xs italic text-text-secondary">{content.photoCaption}</figcaption>
         </figure>

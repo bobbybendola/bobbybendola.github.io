@@ -6,9 +6,10 @@ interface ContactProps {
   };
 }
 
-export default function Contact({ content }: ContactProps) {
+export  function Contact({ content }: ContactProps) {
   return (
-    <section id="contact" className="py-16 px-6 max-w-3xl mx-auto text-center">
+        
+    <section id="contact" className="border-t border-border py-16 px-6 max-w-3xl mx-auto text-center">
       <h2 className="text-2xl font-bold tracking-tight text-text-primary">
         {content.title}
       </h2>

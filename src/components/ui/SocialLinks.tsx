@@ -20,7 +20,7 @@ export function SocialLinks({ links, className = "" }: SocialLinksProps) {
             aria-label={link.label}
             className="text-text-primary transition-opacity hover:opacity-60"
           >
-            <Icon name={link.icon} size={16} strokeWidth={1.75} />
+            <Icon name={link.icon} size={30}strokeWidth={1.75} />
           </a>
         </li>
       ))}

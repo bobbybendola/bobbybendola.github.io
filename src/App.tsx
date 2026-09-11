@@ -1,5 +1,5 @@
 import { siteConfig } from "@/config/siteConfig";
-import { Navbar } from "@/components/layout/Navbar";
+
 import { Footer } from "@/components/layout/Footer";
 import { Hero } from "@/components/sections/Hero";
 import { Bio } from "@/components/sections/Bio";
@@ -10,7 +10,7 @@ import  { Contact } from "@/components/sections/Contact";
 export default function App() {
   return (
     <div className="min-h-screen bg-bg text-text-primary">
-      <Navbar brandName={siteConfig.brandName} items={siteConfig.nav.items} />
+      
 
       <main>
         <Hero content={siteConfig.hero} />
@@ -19,7 +19,9 @@ export default function App() {
         <Contact content={siteConfig.contact} />
       </main>
 
-      <Footer items={siteConfig.nav.items} social={siteConfig.social} copyrightLine={siteConfig.footer.copyrightLine} />
+      <Footer 
+      social={siteConfig.social} 
+      copyrightLine={siteConfig.footer.copyrightLine} />
     </div>
   );
 }
