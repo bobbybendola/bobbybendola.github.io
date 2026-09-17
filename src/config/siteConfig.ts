@@ -43,12 +43,8 @@ import pipedowntrain from "../assets/images/hacks/training_pipe_defect.png";
  * Every string, link, and image on the site lives here. To rebrand,
  * update copy, or point at new assets, edit this file only — no
  * component in src/components should need to change.
- *
- * // TODO(api): this object is a natural place to hook up a headless
- * // CMS or `fetch('/api/site-content')` later; components already
- * // consume it as plain props, so swapping a static import for an
- * // async fetch + context provider is a drop-in change.
  */
+
 export const siteConfig: SiteConfig = {
   meta: {
     title: "Steven Kuzhipala — Computer Engineer, UCI",
@@ -59,6 +55,7 @@ export const siteConfig: SiteConfig = {
   nav: [
     { label: "Learning Everyday", href: "/#bio" },
     { label: "Experience", href: "/#experience" },
+    { label: "Coursework", href: "/#coursework" },
     { label: "Projects", href: "/projects" },
     { label: "Get in Touch", href: "/#contact" },
   ],
@@ -153,6 +150,59 @@ export const siteConfig: SiteConfig = {
     },
   ],
 
+  coursework: {
+    heading: "Coursework",
+    subtitle: "Expected graduation: March 2028",
+    terms: [
+      {
+        id: "fall-2025",
+        label: "Fall 2025",
+        courses: [
+          { code: "EECS 31", name: "Intro to Digital Systems" },
+          { code: "EECS 20", name: "Computer Systems & Programming (LC-3 Assembly)" },
+          { code: "MATH 2D", name: "Multivariable Calculus-I" },
+        ],
+      },
+      {
+        id: "winter-2026",
+        label: "Winter 2026",
+        courses: [
+          { code: "EECS 31L", name: "Digital Systems Lab (RISC-V)" },
+          { code: "EECS 22", name: "Advanced C Programming" },
+          { code: "PHY 7C", name: "Classical Physics (Mechanical)" },
+        ],
+      },
+      {
+        id: "spring-2026",
+        label: "Spring 2026",
+        courses: [
+          { code: "EECS 112", name: "Organization of Digital Computers" },
+          { code: "EECS 22L", name: "Software Engineering in C" },
+          { code: "PHY 7D", name: "Classical Physics (Electricity & Magnetism)" },
+        ],
+      },
+      {
+        id: "fall-2026",
+        label: "Fall 2026",
+        courses: [],
+      },
+      {
+        id: "winter-2027",
+        label: "Winter 2027",
+        courses: [],
+      },
+      {
+        id: "spring-2027",
+        label: "Spring 2027",
+        courses: [],
+      },
+      {
+        id: "fall-2027",
+        label: "Fall 2027",
+        courses: [],
+      },
+    ],
+  },
 
   projects: {
       

@@ -5,6 +5,7 @@ import { Header } from "@/components/layout/Header";
 import { Hero } from "@/components/sections/Hero";
 import { Bio } from "@/components/sections/Bio";
 import { MissionGrid } from "@/components/sections/MissionGrid";
+import { Coursework } from "@/components/sections/Coursework";
 import { Contact } from "@/components/sections/Contact";
 
 export function HomePage() {
@@ -16,6 +17,7 @@ export function HomePage() {
       <main>
         <Bio content={siteConfig.bio} />
         <MissionGrid heading={siteConfig.missionSectionHeading} missions={siteConfig.missions} />
+        <Coursework content={siteConfig.coursework} />
         <Contact content={siteConfig.contact} />
       </main>
 
