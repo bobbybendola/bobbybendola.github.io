@@ -14,7 +14,7 @@ export function Coursework({ content }: CourseworkProps) {
     <section
       id="coursework"
       aria-labelledby="coursework-heading"
-      className="scroll-mt-4 border-t border-border bg-bg py-16 md:py-20"
+      className="scroll-mt-4 border-t border-border bg-bg py-16 md:py-28"
     >
       <Container>
         <h2
@@ -25,25 +25,37 @@ export function Coursework({ content }: CourseworkProps) {
         </h2>
         <p className="mt-2 text-center text-sm text-text-secondary md:text-base">{content.subtitle}</p>
 
-        <div className="relative mx-auto mt-12 max-w-3xl pb-4 before:absolute before:bottom-3 before:left-5 before:top-0 before:w-px before:bg-border after:absolute after:bottom-0 after:left-5 after:-translate-x-1/2 after:border-x-[6px] after:border-t-[10px] after:border-x-transparent after:border-t-border md:before:left-1/2 md:after:left-1/2">
-          <ol>
+        {/* Horizontal Container & Connecting Line */}
+        <div className="relative mx-auto mt-20 max-w-5xl md:py-16">
+          {/* Horizontal Line stretching across the middle */}
+          <div className="absolute left-0 right-0 top-1/2 -translate-y-1/2 h-px bg-border hidden md:block" />
+
+          <ol className="flex flex-col gap-8 md:flex-row md:justify-between md:gap-4">
             {content.terms.map((term, index) => {
-              const isLeft = index % 2 === 0;
+              const isEven = index % 2 === 0; // Even = Top, Odd = Bottom
               const courses = term.courses ?? [];
               const isOpen = activeId === term.id;
               const filled = courses.length > 0;
 
               return (
-                <li
-                  key={term.id}
-                  className={`relative mb-8 flex items-center md:mb-10 ${
-                    isLeft ? "md:flex-row" : "md:flex-row-reverse"
-                  }`}
-                >
+                <li key={term.id} className="relative flex flex-col items-start md:flex-1 md:items-center">
+                  
+                  {/* Timeline Dot (Centered right on the horizontal line) */}
                   <div
-                    className={`flex flex-1 ${
-                      isLeft ? "md:justify-end md:pr-10" : "md:justify-start md:pl-10"
-                    } justify-start pl-12 md:pl-0`}
+                    className={`absolute left-0 top-2 z-10 h-4 w-4 -translate-y-1/2 rounded-full border-2 md:left-1/2 md:top-1/2 md:-translate-x-1/2 md:-translate-y-1/2 ${
+                      filled
+                        ? "border-text-primary bg-text-primary"
+                        : "border-text-primary bg-bg"
+                    }`}
+                  />
+
+                  {/* Card Content container (Alternates top/bottom on desktop) */}
+                  <div
+                    className={`w-full pl-8 md:pl-0 md:w-64 md:left-1/2 md:-translate-x-1/2 ${
+                      isEven
+                        ? "md:absolute md:bottom-1/2 md:pb-8" // Positioned ABOVE the line
+                        : "md:absolute md:top-1/2 md:pt-8"    // Positioned BELOW the line
+                    }`}
                   >
                     <button
                       type="button"
@@ -52,7 +64,7 @@ export function Coursework({ content }: CourseworkProps) {
                       onFocus={() => setActiveId(term.id)}
                       onBlur={() => setActiveId(null)}
                       onClick={() => setActiveId(isOpen ? null : term.id)}
-                      className="w-full max-w-[260px] cursor-pointer border border-border bg-bg p-4 text-left transition-colors hover:border-text-primary"
+                      className="w-full cursor-pointer border border-border bg-bg p-4 text-left transition-colors hover:border-text-primary shadow-sm"
                     >
                       <h3 className="text-sm font-bold text-text-primary md:text-base">{term.label}</h3>
                       <div
@@ -78,16 +90,6 @@ export function Coursework({ content }: CourseworkProps) {
                       </div>
                     </button>
                   </div>
-
-                  <div
-                    className={`absolute left-5 z-10 h-4 w-4 -translate-x-1/2 rounded-full border-2 md:relative md:left-auto md:translate-x-0 ${
-                      filled
-                        ? "border-text-primary bg-text-primary"
-                        : "border-text-primary bg-bg"
-                    }`}
-                  />
-
-                  <div className="hidden flex-1 md:block" />
                 </li>
               );
             })}

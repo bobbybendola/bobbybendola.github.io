@@ -151,8 +151,8 @@ export const siteConfig: SiteConfig = {
   ],
 
   coursework: {
-    heading: "Coursework",
-    subtitle: "Expected graduation: March 2028",
+    heading: "EECS Coursework",
+    subtitle: "",
     terms: [
       {
         id: "fall-2025",
