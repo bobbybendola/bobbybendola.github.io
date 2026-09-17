@@ -12,24 +12,22 @@
    the starkness is the design.
    ========================================================================== */
 :root {
-   
-  --color-bg: #0D0D0D;
-  --color-border: #303030;
+  /* Coffee palette from yanilettemontano/personal-website (light theme) */
+  --color-bg: #f5efe6;
+  --color-border: #c9a67d;
 
-  --color-text-primary: #d4af6a;
-  --color-text-secondary: #C8C8C8;
+  --color-text-primary: #4a3428;
+  --color-text-secondary: #3b2a20;
 
-  --color-hero-bg: #080808;
-  --color-hero-text: #F5F5F5;
-  --color-hero-text-secondary: #D0D0D0;
+  --color-hero-bg: #4a3428;
+  --color-hero-text: #f5efe6;
+  --color-hero-text-secondary: #e8ddce;
 
-  /* Gold: headings / selected editorial emphasis */
-  --color-heading: #d4af6a;
-  --color-heading-muted: #B89452;
+  --color-heading: #4a3428;
+  --color-heading-muted: #8b5e3c;
 
-  /* Blue: actions and keyboard focus */
-  --color-accent: #6E98D8;
-  --color-accent-hover: #82A9E2;
+  --color-accent: #8b5e3c;
+  --color-accent-hover: #c9a67d;
 }
 
 html {
@@ -64,10 +62,10 @@ body {
 }
 
 :focus-visible {
-  outline: 2px solid #82A9E2;
+  outline: 2px solid var(--color-accent);
   outline-offset: 3px;
 }
 
 .on-dark :focus-visible {
-  outline-color: #1f2f46;
+  outline-color: var(--color-hero-text);
 }
