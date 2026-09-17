@@ -88,6 +88,23 @@ export interface ProjectsContent {
   labs: ProjectItem[];
 }
 
+export interface CourseItem {
+  code: string;
+  name: string;
+}
+
+export interface CourseTerm {
+  id: string;
+  label: string;
+  courses: CourseItem[];
+}
+
+export interface CourseworkContent {
+  heading: string;
+  subtitle: string;
+  terms: CourseTerm[];
+}
+
 export interface SiteConfig {
   meta: {
     title: string;
@@ -100,6 +117,7 @@ export interface SiteConfig {
   bio: BioContent;
   missionSectionHeading: string;
   missions: MissionItem[];
+  coursework: CourseworkContent;
   projects: ProjectsContent;
   social: SocialLink[];
   footer: {
@@ -112,15 +130,4 @@ export interface ContactContent {
   title: string;
   description: string;
   email: string;
-}
-
-export interface CourseItem{
-  code: string; 
-  name: string;
-}
-
-export interface CourseTerm {
-  id: string;
-  label: string;          // "Fall 2025"
-  courses: CourseItem[];  // [] for empty quarters
 }

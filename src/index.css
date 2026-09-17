@@ -5,20 +5,20 @@
 
 :root {
   
-  --color-bg:  #4a3428 ; /* #f5efe6 white cream*/ 
+  --color-bg:  #2F3E46 ; /* #f5efe6 white cream, brown: #4a3428 */ 
   --color-border: #c9a67d;
 
   --color-text-primary: #f5efe6;
   --color-text-secondary: #f5efe6;
 
-  --color-hero-bg: #4a3428;
+  --color-hero-bg: #546a76;
   --color-hero-text: #f5efe6; 
   --color-hero-text-secondary: #e8ddce;
 
-  --color-heading: #4a3428;
+  --color-heading: #e8ddce;
   --color-heading-muted: #8b5e3c;
 
-  --color-accent: #8b5e3c;
+  --color-accent: #e8ddce;
   --color-accent-hover: #c9a67d;
 }
 

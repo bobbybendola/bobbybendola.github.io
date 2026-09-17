@@ -309,7 +309,7 @@ export const siteConfig: SiteConfig = {
       {
         id: "OPS Rover",
         title: "DT - Capstone_Rover",
-        caption: "A Modified version of the UCI IEEE OPS Rover (25-26) (Featuring Ferb from Phineas and Ferb). Developed from breadboard to PCB.",
+        caption: "ESP32 rover designed alongside custom joystick control PCB interfacing with an L293D H-bridge motor driver for bi-directional DC motor control.",
         images: [ {src: cap_PCB , alt: "cap_PCB" , aspectRatio: " 16 / 9" } ,
                   {src: cap_rover , alt: "cap_rover", aspectRatio: "16 / 9" } 
         ], 

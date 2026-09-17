@@ -11,7 +11,7 @@ export function Header() {
       <Container className="flex justify-end py-4">
         <nav className="flex flex-wrap justify-end gap-x-6 gap-y-2">
           {siteConfig.nav.map((item) => {
-            const active=true ;
+            const active = item.href === "/projects" && pathname === "/projects";
 
             return (
               <Link

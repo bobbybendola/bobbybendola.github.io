@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-import type { CourseworkContent } from "@/types/content";
+import type { CourseItem, CourseworkContent } from "@/types/content";
 import { Container } from "@/components/ui/Container";
 
 interface CourseworkProps {
@@ -74,7 +74,7 @@ export function Coursework({ content }: CourseworkProps) {
                       >
                         {courses.length > 0 ? (
                           <ul className="flex flex-col gap-1.5">
-                            {courses.map((course) => (
+                            {courses.map((course: CourseItem) => (
                               <li
                                 key={`${term.id}-${course.code}`}
                                 className="text-sm leading-relaxed text-text-secondary"
