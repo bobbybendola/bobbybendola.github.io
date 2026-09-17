@@ -11,14 +11,14 @@ export function Header() {
       <Container className="flex justify-end py-4">
         <nav className="flex flex-wrap justify-end gap-x-6 gap-y-2">
           {siteConfig.nav.map((item) => {
-            const active = item.href === "/projects" && pathname === "/projects";
+            const active=true ;
 
             return (
               <Link
                 key={item.href}
                 to={item.href}
                 className={`text-sm tracking-wide transition-opacity hover:opacity-60 ${
-                  active ? "text-text-primary" : "text-text-secondary"
+                  active ? "text-text-primary font-bold" : "text-text-secondary"
                 }`}
               >
                 {item.label}

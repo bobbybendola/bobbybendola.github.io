@@ -184,22 +184,13 @@ export const siteConfig: SiteConfig = {
       {
         id: "fall-2026",
         label: "Fall 2026",
-        courses: [],
-      },
-      {
-        id: "winter-2027",
-        label: "Winter 2027",
-        courses: [],
-      },
-      {
-        id: "spring-2027",
-        label: "Spring 2027",
-        courses: [],
-      },
-      {
-        id: "fall-2027",
-        label: "Fall 2027",
-        courses: [],
+        courses: [
+          { code: "EECS 112L ", name: "Organization of Digital Computers Lab" },
+          { code: "EECS 40", name: "Object Oriented Systems&Programming" },
+          { code: "EECS 195", name: "Drones" },
+          { code: "PHY 7E", name: "Classical Physics (Oscillations & Waves)" },
+
+        ],
       },
     ],
   },
