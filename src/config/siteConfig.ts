@@ -86,7 +86,7 @@ export const siteConfig: SiteConfig = {
 
 "Outside of coursework, I teach embedded systems and low-level C++ through hands-on hardware bring-up.", 
 
-"I love learning about new tech, especially AI/ML agentic workflows, and edge computing, and thrive when collaborating with large engineering teams.", 
+"I love learning about new tech, especially AI/ML agentic workflows, and edge computing, and thrive when collaborating with large engineering teams. I love to build as much as I love to debug after failing.", 
 
 "Actively seeking opportunities in ASIC design, FPGA prototyping, and embedded firmware development."
   ],
@@ -432,7 +432,7 @@ export const siteConfig: SiteConfig = {
   ],
 
   footer: {
-    copyrightLine: "©2026 — Steven Kuzhipala",
+    copyrightLine: "© 2026 — Steven Kuzhipala — Phil 4:13 ",
   },
 
 
