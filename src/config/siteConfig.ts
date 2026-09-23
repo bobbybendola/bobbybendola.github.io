@@ -405,7 +405,7 @@ export const siteConfig: SiteConfig = {
         how: [],
         links: [
           { label: "DevPost", href: "https://devpost.com/software/forge-z8v4qm#updates" },
-          { label: "GitHub", href: "https://github.com/bobbybendola/forge-z8v4qm" }, 
+          { label: "GitHub", href: "https://github.com/arjvnv/forge-1st-Place-UC-Berkeley-AI-Hackathon-2026-Redis-track" }, 
           { label: "Youtube", href: "https://www.youtube.com/watch?v=4K3G6_XONPU" }, 
         ],
         teammates: [
