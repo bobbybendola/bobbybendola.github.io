@@ -23,6 +23,7 @@ import solarCarFullSize from "../assets/images/solar_car/full_size_car.jpg";
 
 import esc from "../assets/images/esc/esc_lifetank25_4.jpg";
 import esc2 from "../assets/images/esc/esc_lifetank25_1.jpg";
+import escGroup from "../assets/images/esc/ESC_Group_Photo.jpg";
 import esc_logo from "../assets/images/esc/esc_logo.png"
 import escLIfeTankWin  from "../assets/images/esc/esc_lifetank25_3.jpg";
 
@@ -137,7 +138,7 @@ export const siteConfig: SiteConfig = {
       title: "Technical Director — UCI Engineering Student Council",
       description:
         "Leading web development for the ESC website and the EScan attendance management platform using Next.js, QR-based registration, and automated backend infrastructure.",
-      image: esc, 
+      image:  escGroup, 
        icon: esc_logo, 
        links: "https://esc.eng.uci.edu/" 
     },
