@@ -21,11 +21,12 @@ import solarCarCelebrateUCI from "../assets/images/solar_car/celebrate_uci.jpg";
 import solarCarPowerPCB from "../assets/images/solar_car/power_pcb.png";
 import solarCarFullSize from "../assets/images/solar_car/full_size_car.jpg";
 
-import esc from "../assets/images/esc/esc_lifetank25_4.jpg";
+//import esc from "../assets/images/esc/esc_lifetank25_4.jpg";
 import esc2 from "../assets/images/esc/esc_lifetank25_1.jpg";
 import escGroup from "../assets/images/esc/ESC_Group_Photo.jpg";
 import esc_logo from "../assets/images/esc/esc_logo.png"
 import escLIfeTankWin  from "../assets/images/esc/esc_lifetank25_3.jpg";
+import steven_esc_headshot from "../assets/images/esc/Steven_Kuzhipala_ESC.jpg";
 
 import asic from "../assets/images/landing/ASIC-Design-2.jpg";
 
@@ -69,8 +70,8 @@ export const siteConfig: SiteConfig = {
     subheading:
       "",
     floatingImage: {
-      src: asic,
-      alt: "ASIC Waveform close up ",
+      src: steven_esc_headshot,
+      alt: "ESC Headshot ",
       aspectRatio: "16 / 9",
     },
   },
