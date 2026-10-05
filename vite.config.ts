@@ -20,6 +20,7 @@ function githubPagesSpaFallback(): Plugin {
 export default defineConfig({
   plugins: [react(), githubPagesSpaFallback()],
   base: "/",
+  assetsInclude: ["**/*.JPG"],
   resolve: {
     alias: {
       "@": fileURLToPath(new URL("./src", import.meta.url)),

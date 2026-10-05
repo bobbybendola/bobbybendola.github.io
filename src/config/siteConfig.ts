@@ -28,7 +28,6 @@ import esc_logo from "../assets/images/esc/esc_logo.png"
 import escLIfeTankWin  from "../assets/images/esc/esc_lifetank25_3.jpg";
 import steven_esc_headshot from "../assets/images/esc/Steven_Kuzhipala_ESC.jpg";
 
-import asic from "../assets/images/landing/ASIC-Design-2.jpg";
 
 import riscv_1 from "../assets/images/RISC_V/Processor_IO.png";
 import riscv_2 from "../assets/images/RISC_V/Waveform_checks.png";
@@ -65,8 +64,8 @@ export const siteConfig: SiteConfig = {
   goatcounterCode: "stevenk",
 
   hero: {
-    greeting: "Hi, I'm",
-    name: "Steven Kuzhipala",
+    greeting: "Hello!",
+    name: "I am Steven Kuzhipala!",
     subheading:
       "",
     floatingImage: {

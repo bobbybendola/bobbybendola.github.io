@@ -24,10 +24,9 @@ export function Hero({ content }: HeroProps) {
         </div>
 
         <div className="flex flex-col gap-4 pb-6">
-          <h1 className="text-3xl font-bold leading-tight text-hero-text md:text-4xl">
-            {content.greeting}
-            <br />
-            {content.name}
+          <h1 className="flex flex-col gap-3 text-center text-3xl font-bold leading-tight text-hero-text md:gap-4 md:text-4xl">
+            <span>{content.greeting}</span>
+            <span>{content.name}</span>
           </h1>
           <p className="max-w-[52ch] text-sm text-hero-text-secondary md:text-base">{content.subheading}</p>
         </div>
