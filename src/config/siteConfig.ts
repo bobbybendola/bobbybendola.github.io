@@ -1,5 +1,8 @@
 import type { SiteConfig } from "@/types/content";
 
+import corsaLogo from  "../assets/images/CORSA/corsa-lab-logo-short.png";
+import corsaTeam from  "../assets/images/CORSA/group_2026_jun.jpg"
+
 import chemECAR from "../assets/images/chem_e_car/chem_e_car_team25.jpg";
 import chemEcar_logo from "../assets/images/chem_e_car/chem_e_car_at_uci_logo.jpeg";
 import lumnin_car  from "../assets/images/chem_e_car/luminol_car.png";
@@ -104,6 +107,19 @@ export const siteConfig: SiteConfig = {
   missionSectionHeading: "Experience",
 
   missions: [
+
+    {
+
+      id: "hardware-acceleration",
+      title: "FPGA Hardware Acceleration Researcher",
+      description:
+        "Utilizing AMD Vivado and C++ HLS in AMD Vitis to synthesize and optimize code to accelerate AI workloads on FPGAs. Working under Prof. Sitao Huang.",
+      image: corsaTeam , 
+      icon: corsaLogo  ,
+      links: "https://uci-corsa.github.io/"
+
+
+    }, 
     {
       id: "embedded-cheme-car",
       title: "Embedded Systems Engineer — UCI AIChE Chem-E Car",
