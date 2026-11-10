@@ -15,7 +15,8 @@ function filledLinks(links: ProjectItem["links"]) {
 }
 
 function filledTeammates(teammates: ProjectItem["teammates"]) {
-  return teammates.filter((person) => person.name.trim().length > 0 && person.href.trim().length > 0);
+  // A teammate with no link yet still shows up, as plain text.
+  return teammates.filter((person) => person.name.trim().length > 0);
 }
 
 function BulletList({ items }: { items: string[] }) {
@@ -46,22 +47,34 @@ function ProjectBlock({ project, compact = false }: { project: ProjectItem; comp
         {teammates.length > 0 && (
           <ul className="flex flex-wrap items-center gap-x-3 gap-y-1 md:justify-end">
             {teammates.map((person, index) => (
-              <li key={person.href} className="flex items-center gap-3">
+              <li key={person.name} className="flex items-center gap-3">
                 {index > 0 && <span className="text-text-secondary">·</span>}
-                <a
-                  href={person.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1.5 text-sm text-text-primary transition-opacity hover:opacity-60"
-                >
-                  <Icon name="Linkedin" size={14} strokeWidth={1.75} />
-                  {person.name}
-                </a>
+                {person.href.trim() ? (
+                  <a
+                    href={person.href.trim()}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1.5 text-sm text-text-primary transition-opacity hover:opacity-60"
+                  >
+                    <Icon name="Linkedin" size={14} strokeWidth={1.75} />
+                    {person.name}
+                  </a>
+                ) : (
+                  <span className="text-sm text-text-primary">{person.name}</span>
+                )}
               </li>
             ))}
           </ul>
         )}
       </div>
+
+      {(project.event || project.result) && (
+        <p className="mt-2 text-sm text-text-secondary">
+          {project.event}
+          {project.event && project.result && " · "}
+          {project.result && <span className="font-semibold text-text-primary">{project.result}</span>}
+        </p>
+      )}
 
       {project.caption.trim() && (
         <p className="mt-3 max-w-[70ch] text-lg leading-relaxed text-text-secondary">{project.caption}</p>

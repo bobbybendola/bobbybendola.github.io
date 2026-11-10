@@ -78,6 +78,10 @@ export interface ProjectItem {
   how: string[];
   links: ProjectLink[];
   teammates: ProjectTeammate[];
+  /** Hackathon (or event) name — shown under the title. */
+  event?: string;
+  /** Placement / prize, e.g. "1st Place · Redis Track" — shown next to the event. */
+  result?: string;
 }
 
 export interface ProjectsContent {
