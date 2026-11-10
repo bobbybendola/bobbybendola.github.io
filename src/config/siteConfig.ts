@@ -490,7 +490,157 @@ export const siteConfig: SiteConfig = {
     intro: "Builds from hackathons, wins first. Full list on my Devpost.",
     labsHeading: "",
     labs: [],
-    featured: [],
+    featured: [
+      // ── Teammates with href: "" show as plain text. Paste their LinkedIn URL into href to turn the name into a link. ──
+
+      //SkyFall – Cal Hacks 13.0
+      {
+        id: "skyfall",
+        title: "SkyFall",
+        event: "Cal Hacks 13.0",
+        result: "Winner — Best Use of SpacetimeDB",
+        caption: "Live 3D globe that forecasts which satellites and rocket bodies are re-entering, which debris pieces might survive, and where they could land. Runs GPU Monte Carlo physics with SpacetimeDB as the entire backend.",
+        images: [],
+        what: [],
+        how: [],
+        links: [
+          { label: "Devpost", href: "https://devpost.com/software/skyfall-uca4i9" },
+          { label: "GitHub", href: "https://github.com/bobbybendola/skyFall" },
+          { label: "Live App", href: "http://isitfalling.us" },
+          { label: "YouTube", href: "https://www.youtube.com/watch?v=m9VnLBoztKQ" },
+        ],
+        teammates: [
+          { name: "Kevin Chhim", href: "" },
+          { name: "Christopher Chhim", href: "" },
+          { name: "Hank Li", href: "" },
+        ],
+      },
+
+      //Forge – UC Berkeley AI Hackathon
+      {
+        id: "forge",
+        title: "Forge",
+        event: "UC Berkeley AI Hackathon 2026",
+        result: "1st Place Redis Track · Best Technical Implementation · Best Creativity & Originality",
+        caption: "Engineered an AI infrastructure pipeline combining RedisVL HNSW vector search, RedisJSON, and FastAPI to synthesize and verify executable tools with Claude Opus 4, winning 1st place and Best Technical Implementation at the UC Berkeley AI Hackathon. ",
+        images: [ {src:  berkAI   , alt: " berkAI " , aspectRatio: " 16 / 9" }
+
+        ],
+        what: [],
+        how: [],
+        links: [
+          { label: "DevPost", href: "https://devpost.com/software/forge-z8v4qm#updates" },
+          { label: "GitHub", href: "https://github.com/arjvnv/forge-1st-Place-UC-Berkeley-AI-Hackathon-2026-Redis-track" },
+          { label: "Youtube", href: "https://www.youtube.com/watch?v=4K3G6_XONPU" },
+        ],
+        teammates: [
+          { name: "Arjun Vivek", href: "https://www.linkedin.com/in/arjun-vivek/" }
+        ],
+      },
+
+      //Ring Road Market – ICSSC WebJam
+      {
+        id: "ring-road-market",
+        title: "Ring Road Market",
+        event: "ICSSC WebJam 2025",
+        result: "Top 10",
+        caption: "UCI campus marketplace prototype with location-based features, built with FastAPI, React, and SQLite.",
+        images: [],
+        what: [],
+        how: [],
+        links: [
+          { label: "Devpost", href: "https://devpost.com/software/ring-road-market" },
+          { label: "GitHub", href: "https://github.com/KyleKDang/ring-road-market" },
+          { label: "Live Demo", href: "https://uci-marketplace.vercel.app" },
+        ],
+        teammates: [
+          // TODO: add teammates (name + LinkedIn href)
+        ],
+      },
+
+      //FRND – Irvine Hacks
+      {
+        id: "FRND",
+        title: "FRND-Field Neighbouring Relay Data Points",
+        event: "Irvine Hacks 2026",
+        caption: "Engineered a standalone serverless P2P mesh network using Raspberry Pi and wireless routing for emergency-response field coordination, integrating offline LLM inference via a Qualcomm UnoQ board.",
+        images: [ {src: FRND_arch  , alt: "FRND architecture" , aspectRatio: " 16 / 9" } ,
+                  {src: FRND_drone  , alt: "FRND Drone", aspectRatio: "16 / 9" }
+        ],
+        what: [],
+        how: [],
+        links: [
+          { label: "GitHub", href: "https://github.com/vrushang1234/FRND" },
+          { label: "DevPost", href: "https://devpost.com/software/frnd-field-neighbouring-relay-data-points" },
+          { label: "YouTube", href: "https://www.youtube.com/watch?v=904H0sNUbPI" }
+        ],
+        teammates: [
+          { name: "Vrushang Anand", href: "https://www.linkedin.com/in/vrushang-anand12/" },
+          { name: "Rachit Jain" , href: "https://www.linkedin.com/in/rachit-jain27/" },
+          { name: "Ritvik Singh" , href: "https://www.linkedin.com/in/singhritvik/" },
+        ],
+      },
+
+      //Lumines – UCI AWS Cloud Hacks
+      {
+        id: "lumines",
+        title: "Lumines",
+        event: "UCI AWS Cloud Hacks 2026",
+        caption: "Web app that turns any home address into an interactive 3D map of estimated solar generation and carbon footprint, compares you with nearby households, and simulates adding solar panels. React + TypeScript, Flask, AWS Location Service, Google Solar API, and Claude on AWS Bedrock.",
+        images: [],
+        what: [],
+        how: [],
+        links: [
+          { label: "Devpost", href: "https://devpost.com/software/lumines" },
+          { label: "GitHub", href: "https://github.com/Ronan-dev869/SolarApp" },
+          { label: "YouTube", href: "https://www.youtube.com/watch?v=CwdlD1hMRDI" },
+        ],
+        teammates: [
+          { name: "Shrujan Sriram", href: "https://www.linkedin.com/in/shrujansriram/" },
+          { name: "Ronan Nguyen", href: "" },
+        ],
+      },
+
+      //PipeDown – UC Berkeley AI Hackathon (post-hackathon support)
+      {
+        id: "pipedown-yolo",
+        title: "Locally trained Kaggle YOLOv8n Pipe Defect CV Model",
+        event: "UC Berkeley AI Hackathon 2026 — Team PipeDown",
+        caption: "Supported Team PipeDown post UCB AI 2026 by creating an optimized YOLOv8n object detection training on an Apple M4 Mac mini, routing backpropagation through the 10-core GPU via Metal/MPS to achieve high-accuracy pipe defect detection.",
+        images: [ {src: pipedowntrain  , alt: " berkAI pipedown training" , aspectRatio: " 16 / 9" }
+
+        ],
+        what: [],
+        how: [],
+        links: [
+          { label: "DevPost PipeDown", href: "https://devpost.com/software/tbd-nprbw3" },
+          { label: "GitHub", href: "https://github.com/bobbybendola/PipeDefectDectectionModel" },
+          { label: "YouTube", href: "https://www.youtube.com/watch?v=AaJa3gm1w9M" },
+        ],
+        teammates: [
+          { name: "Aditi Varia", href: "https://www.linkedin.com/in/aditi-varia/" },
+          { name: "Shrujan Sriram", href: "https://www.linkedin.com/in/shrujansriram/" },
+          { name: "Abhinav Gondesi", href: "https://www.linkedin.com/in/abhinav-gondesi-b5696b303/" }
+        ],
+      },
+
+      //SkinID – CareTech 2026
+      {
+        id: "skinid",
+        title: "SkinID Dashboard",
+        event: "CareTech 2026 Hackathon",
+        caption: "Web app for capturing consistent, structured data about skin conditions: upload an image, draw a bounding box around a deformity, and the app computes its height and width in pixels, then submits it with metadata (age, sex, anatomical location) to a backend API.",
+        images: [],
+        what: [],
+        how: [],
+        links: [
+          { label: "Devpost", href: "https://devpost.com/software/skinid_dashboard" },
+          { label: "GitHub", href: "https://github.com/bobbybendola/SkinID_Dashboard" },
+          { label: "YouTube", href: "https://www.youtube.com/watch?v=K4zUuxcR23w" },
+        ],
+        teammates: [],
+      },
+    ],
   },
 
   social: [
