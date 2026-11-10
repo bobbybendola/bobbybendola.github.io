@@ -279,28 +279,6 @@ export const siteConfig: SiteConfig = {
         ],
       }, 
 
-      //FRND
-      {
-        id: "FRND",
-        title: "FRND-Field Neighbouring Relay Data Points",
-        caption: "Engineered a standalone serverless P2P mesh network using Raspberry Pi and wireless routing for emergency-response field coordination, integrating offline LLM inference via a Qualcomm UnoQ board.",
-        images: [ {src: FRND_arch  , alt: "FRND architecture" , aspectRatio: " 16 / 9" } ,
-                  {src: FRND_drone  , alt: "FRND Drone", aspectRatio: "16 / 9" } 
-        ], 
-        what: [],
-        how: [],
-        links: [
-          { label: "GitHub", href: "https://github.com/vrushang1234/FRND" },
-          { label: "DevPost", href: "https://devpost.com/software/frnd-field-neighbouring-relay-data-points" }, 
-          { label: "YouTube", href: "https://www.youtube.com/watch?v=904H0sNUbPI" }
-        ],
-        teammates: [
-          { name: "Vrushang Anand", href: "https://www.linkedin.com/in/vrushang-anand12/" },
-          { name: "Rachit Jain" , href: " https://www.linkedin.com/in/rachit-jain27/" }, 
-          { name: "Ritvik Singh" , href: " https://www.linkedin.com/in/singhritvik/" }, 
-        ],
-      }, 
-
       //SolarCar
       {
         id: "Solar Car",
@@ -409,50 +387,6 @@ export const siteConfig: SiteConfig = {
         ],
         teammates: [
           { name: "UCI IEEE", href: "https://www.linkedin.com/company/ieee-uci/" }
-        ],
-      }, 
-
-      //Berk AI 
-      {
-        id: "Berk AI ",
-        title: "Forge - 1st place-Redis Track UC Berkeley  AI Hack 2026", 
-        caption: "Engineered an AI infrastructure pipeline combining RedisVL HNSW vector search, RedisJSON, and FastAPI to synthesize and verify executable tools with Claude Opus 4, winning 1st place and Best Technical Implementation at the UC Berkeley AI Hackathon. ",
-        images: [ {src:  berkAI   , alt: " berkAI " , aspectRatio: " 16 / 9" }
-                  
-        ], 
-        what: [],
-        how: [],
-        links: [
-          { label: "DevPost", href: "https://devpost.com/software/forge-z8v4qm#updates" },
-          { label: "GitHub", href: "https://github.com/arjvnv/forge-1st-Place-UC-Berkeley-AI-Hackathon-2026-Redis-track" }, 
-          { label: "Youtube", href: "https://www.youtube.com/watch?v=4K3G6_XONPU" }, 
-        ],
-        teammates: [
-          { name: "Arjun Vivek", href: "https://www.linkedin.com/in/arjun-vivek/" }
-
-        ],
-      }, 
-
-      //pipedown Berk AI 
-      {
-        id: "Berk AI ",
-        title: "Locally trained Kaggle YOLOv8n Pipe Defect CV Model", 
-        caption: "Supported Team PipeDown post UCB AI 2026 by creating an optimized YOLOv8n object detection training on an Apple M4 Mac mini, routing backpropagation through the 10-core GPU via Metal/MPS to achieve high-accuracy pipe defect detection.",
-        images: [ {src: pipedowntrain  , alt: " berkAI pipedown training" , aspectRatio: " 16 / 9" }
-                  
-        ], 
-        what: [],
-        how: [],
-        links: [
-          { label: "DevPost PipeDown", href: "https://devpost.com/software/tbd-nprbw3" },
-          { label: "GitHub", href: "https://github.com/bobbybendola/PipeDefectDectectionModel" }, 
-          { label: "YouTube", href: "https://www.youtube.com/watch?v=AaJa3gm1w9M" }, 
-        ],
-        teammates: [
-          { name: "Aditi Varia", href: "https://www.linkedin.com/in/aditi-varia/" }, 
-          { name: "Shrujan Sriram", href: "https://www.linkedin.com/in/shrujansriram/" }, 
-           { name: "Abhinav Gondesi", href: "https://www.linkedin.com/in/abhinav-gondesi-b5696b303/" }
-
         ],
       }, 
 
