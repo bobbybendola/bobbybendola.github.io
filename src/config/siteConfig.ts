@@ -61,6 +61,7 @@ export const siteConfig: SiteConfig = {
     { label: "Experience", href: "/#experience" },
     { label: "Coursework", href: "/#coursework" },
     { label: "Projects", href: "/projects" },
+    { label: "Hackathons", href: "/hackathons" },
     { label: "Get in Touch", href: "/#contact" },
   ],
 
@@ -117,6 +118,8 @@ export const siteConfig: SiteConfig = {
       image: corsaTeam , 
       icon: corsaLogo  ,
       links: "https://uci-corsa.github.io/"
+
+
     }, 
     {
       id: "embedded-cheme-car",
@@ -203,8 +206,9 @@ export const siteConfig: SiteConfig = {
           { code: "EECS 112L ", name: "Organization of Digital Computers Lab" },
           { code: "EECS 40", name: "Object Oriented Systems&Programming" },
           { code: "EECS 195", name: "Drones" },
-          { code: "EECS 199", name: "Research in UCI EECS - CORSA LAB" }, 
+          { code: "EECS 199", name: "Research in UCI EECS - CORSA LAB" },
           { code: "PHY 7E", name: "Classical Physics (Oscillations & Waves)" },
+
         ],
       },
     ],
@@ -479,6 +483,14 @@ export const siteConfig: SiteConfig = {
 
 
 
+  },
+
+  hackathons: {
+    heading: "Hackathons",
+    intro: "Builds from hackathons, wins first. Full list on my Devpost.",
+    labsHeading: "",
+    labs: [],
+    featured: [],
   },
 
   social: [

@@ -123,6 +123,7 @@ export interface SiteConfig {
   missions: MissionItem[];
   coursework: CourseworkContent;
   projects: ProjectsContent;
+  hackathons: ProjectsContent;
   social: SocialLink[];
   footer: {
     copyrightLine: string;

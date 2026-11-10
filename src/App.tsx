@@ -4,6 +4,7 @@ import { ScrollToHash } from "@/components/layout/ScrollToHash";
 import { GoatCounter } from "@/components/layout/GoatCounter";
 import { HomePage } from "@/pages/HomePage";
 import { ProjectsPage } from "@/pages/ProjectsPage";
+import { HackathonsPage } from "@/pages/HackathonsPage";
 
 export default function App() {
   return (
@@ -13,6 +14,7 @@ export default function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/projects" element={<ProjectsPage />} />
+        <Route path="/hackathons" element={<HackathonsPage />} />
       </Routes>
     </>
   );
