@@ -117,8 +117,6 @@ export const siteConfig: SiteConfig = {
       image: corsaTeam , 
       icon: corsaLogo  ,
       links: "https://uci-corsa.github.io/"
-
-
     }, 
     {
       id: "embedded-cheme-car",
@@ -205,8 +203,8 @@ export const siteConfig: SiteConfig = {
           { code: "EECS 112L ", name: "Organization of Digital Computers Lab" },
           { code: "EECS 40", name: "Object Oriented Systems&Programming" },
           { code: "EECS 195", name: "Drones" },
+          { code: "EECS 199", name: "Research in UCI EECS - CORSA LAB" }, 
           { code: "PHY 7E", name: "Classical Physics (Oscillations & Waves)" },
-
         ],
       },
     ],
