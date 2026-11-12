@@ -8,7 +8,6 @@ import chemEcar_logo from "../assets/images/chem_e_car/chem_e_car_at_uci_logo.jp
 import lumnin_car  from "../assets/images/chem_e_car/luminol_car.png";
 import lumnin_car_pcb  from "../assets/images/chem_e_car/luminol_car_pcb.png";
 
-import ieeeOPS from "../assets/images/ieee/ieee_ops.jpg";
 import ieeeLogo from "../assets/images/ieee/ieee_logoName.png";
 import cap_PCB from "../assets/images/ieee/capstone_pcbpng.png";
 import cap_rover from "../assets/images/ieee/capstone_rover.jpg";
@@ -16,7 +15,8 @@ import ieee_ws from "../assets/images/ieee/WSpng.png";
 import ieee_mmp3 from "../assets/images/ieee/mmp3.png";
 import ieee_mmp3_sch from "../assets/images/ieee/ieee_mp3_sch.png";
 import ieee_stopWatch from "../assets/images/ieee/OPS_digital_stopwatch_close_up.jpeg";
-import ieee_555piano from "../assets/images/ieee/555_Keyboard .png";
+import ieee_555piano from "../assets/images/ieee/555_Keyboard.png";
+import steven_ops from "../assets/images/ieee/steven_ops.jpg";
 
 import solarCarIcon from "../assets/images/solar_car/Solar Car Icon.png";
 import solarCar from "../assets/images/solar_car/compressed team photo.jpg";
@@ -150,7 +150,7 @@ export const siteConfig: SiteConfig = {
       title: "Embedded Systems Lab Instructor — UCI IEEE OPS",
       description:
         "Instructed engineering students in low-level C++, ESP32 peripherals, communication protocols, PCB-build-up, soldering, and hardware debugging. Deliever lectures on these topics periodically, creating engaging lecture content and activties",
-        image: ieeeOPS  , 
+        image: steven_ops  , 
         icon: ieeeLogo, 
         links: "https://ieee.ics.uci.edu/ops/"
     },
