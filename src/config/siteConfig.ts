@@ -15,8 +15,10 @@ import ieee_ws from "../assets/images/ieee/WSpng.png";
 import ieee_mmp3 from "../assets/images/ieee/mmp3.png";
 import ieee_mmp3_sch from "../assets/images/ieee/ieee_mp3_sch.png";
 import ieee_stopWatch from "../assets/images/ieee/OPS_digital_stopwatch_close_up.jpeg";
-import ieee_555piano from "../assets/images/ieee/555_Keyboard.png";
+import ieee_555piano from "../assets/images/ieee/555_Keyboard .png";
 import steven_ops from "../assets/images/ieee/steven_ops.jpg";
+import mm_logo from "../assets/images/ieee/mm_logo_whitemaze.png";
+import aamc_comp from "../assets/images/ieee/aamc_comp_2025.jpg";
 
 import solarCarIcon from "../assets/images/solar_car/Solar Car Icon.png";
 import solarCar from "../assets/images/solar_car/compressed team photo.jpg";
@@ -146,6 +148,16 @@ export const siteConfig: SiteConfig = {
     },
 
     {
+      id: "micromouse-ieee",
+      title: "AAMC Micromouse Embedded Engineer",
+      description:
+        "Design an autonomous robotic mouse to navigate and solve mazes at the International AAMC Competition. Built entirely from scratch: schematic, PCB to firmware. ",
+        image: aamc_comp  , 
+        icon: mm_logo , 
+        links: "https://ieee.ics.uci.edu/micromouse/"
+    },
+
+    {
       id: "lab-instructor-ieee",
       title: "Embedded Systems Lab Instructor — UCI IEEE OPS",
       description:
@@ -208,7 +220,7 @@ export const siteConfig: SiteConfig = {
         id: "fall-2026",
         label: "Fall 2026",
         courses: [
-          { code: "EECS 112L ", name: "Organization of Digital Computers Lab" },
+          { code: "EECS 112L ", name: "Organization of Digital Computers Lab (FPGA)" },
           { code: "EECS 40", name: "Object Oriented Systems&Programming" },
           { code: "EECS 195", name: "Drones" },
           { code: "EECS 199", name: "Research in UCI EECS - CORSA LAB" },
@@ -430,7 +442,7 @@ export const siteConfig: SiteConfig = {
     labsHeading: "",
     labs: [],
     featured: [
-      // ── Teammates with href: "" show as plain text. Paste their LinkedIn URL into href to turn the name into a link. ──
+      
 
       //SkyFall – Cal Hacks 13.0
       {
