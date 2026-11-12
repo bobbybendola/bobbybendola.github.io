@@ -41,7 +41,6 @@ import FRND_drone from "../assets/images/FRND/drone_picture.png";
 
 import berkAI from "../assets/images/hacks/berk_ai_26.jpg";
 import pipedowntrain from "../assets/images/hacks/training_pipe_defect.png";
-import care_tech from "../assets/images/hacks/care_tech_uci.png";
 import ring_road from "../assets/images/hacks/ring_road_market.jpg"; 
 import space_time from "../assets/images/hacks/space_time_cal_hacks.jpg"; 
 import lumines from "../assets/images/hacks/lumines.jpg"; 
@@ -427,7 +426,7 @@ export const siteConfig: SiteConfig = {
 
   hackathons: {
     heading: "Hackathons",
-    intro: "Builds from hackathons, wins first. Full list on my Devpost.",
+    intro: "Builds from hackathons. Devpost and Youtube linked!",
     labsHeading: "",
     labs: [],
     featured: [
@@ -479,27 +478,6 @@ export const siteConfig: SiteConfig = {
         ],
       },
 
-      //Ring Road Market – ICSSC WebJam
-      {
-        id: "ring-road-market",
-        title: "Ring Road Market",
-        event: "ICSSC WebJam 2025",
-        result: "Top 10",
-        caption: "UCI campus marketplace prototype with location-based features, built with FastAPI, React, and SQLite.",
-        images: [{src: ring_road  , alt: "ring_road" , aspectRatio: " 16 / 9" }],
-        what: [],
-        how: [],
-        links: [
-          { label: "Devpost", href: "https://devpost.com/software/ring-road-market" },
-          { label: "GitHub", href: "https://github.com/KyleKDang/ring-road-market" },
-          { label: "Live Demo", href: "https://uci-marketplace.vercel.app" },
-        ],
-        teammates: [
-          { name: "Kyle Dang", href: "https://www.linkedin.com/in/kyle-k-dang/" },
-           { name: "Shrujan Sriram", href: "https://www.linkedin.com/in/shrujansriram/" },
-        ],
-      },
-
       //FRND – Irvine Hacks
       {
         id: "FRND",
@@ -522,7 +500,26 @@ export const siteConfig: SiteConfig = {
           { name: "Ritvik Singh" , href: "https://www.linkedin.com/in/singhritvik/" },
         ],
       },
-
+      //Ring Road Market – ICSSC WebJam
+      {
+        id: "ring-road-market",
+        title: "Ring Road Market",
+        event: "ICSSC WebJam 2025",
+        result: "Top 10",
+        caption: "UCI campus marketplace prototype with location-based features, built with FastAPI, React, and SQLite.",
+        images: [{src: ring_road  , alt: "ring_road" , aspectRatio: " 16 / 9" }],
+        what: [],
+        how: [],
+        links: [
+          { label: "Devpost", href: "https://devpost.com/software/ring-road-market" },
+          { label: "GitHub", href: "https://github.com/KyleKDang/ring-road-market" },
+          { label: "Live Demo", href: "https://uci-marketplace.vercel.app" },
+        ],
+        teammates: [
+          { name: "Kyle Dang", href: "https://www.linkedin.com/in/kyle-k-dang/" },
+           { name: "Shrujan Sriram", href: "https://www.linkedin.com/in/shrujansriram/" },
+        ],
+      },
       //Lumines – UCI AWS Cloud Hacks
       {
         id: "lumines",
