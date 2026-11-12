@@ -121,7 +121,7 @@ export const siteConfig: SiteConfig = {
       id: "hardware-acceleration",
       title: "FPGA Hardware Acceleration Researcher",
       description:
-        "Utilizing AMD Vivado and C++ HLS in AMD Vitis to synthesize and optimize code to accelerate AI workloads on FPGAs. Working under Prof. Sitao Huang.",
+        "Utilizing AMD Vivado and C++ HLS in AMD Vitis to synthesize and optimize code to accelerate AI workloads on FPGAs. Working under Prof. Sitao Huang and PhD EECS researcher Saptarshi Mitra.",
       image: corsaTeam , 
       icon: corsaLogo  ,
       links: "https://uci-corsa.github.io/"
