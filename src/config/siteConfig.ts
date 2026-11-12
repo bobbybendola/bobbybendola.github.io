@@ -30,6 +30,7 @@ import escGroup from "../assets/images/esc/ESC_Group_Photo.jpg";
 import esc_logo from "../assets/images/esc/esc_logo.png"
 import escLIfeTankWin  from "../assets/images/esc/esc_lifetank25_3.jpg";
 import steven_esc_headshot from "../assets/images/esc/Steven_Kuzhipala_ESC.jpg";
+import engiTank from "../assets/images/esc/engitank_25.jpg";
 
 
 import riscv_1 from "../assets/images/RISC_V/Processor_IO.png";
@@ -40,6 +41,11 @@ import FRND_drone from "../assets/images/FRND/drone_picture.png";
 
 import berkAI from "../assets/images/hacks/berk_ai_26.jpg";
 import pipedowntrain from "../assets/images/hacks/training_pipe_defect.png";
+import care_tech from "../assets/images/hacks/care_tech_uci.png";
+import ring_road from "../assets/images/hacks/ring_road_market.jpg"; 
+import space_time from "../assets/images/hacks/space_time_cal_hacks.jpg"; 
+import lumines from "../assets/images/hacks/lumines.jpg"; 
+
 
 /**
  * siteConfig.ts
@@ -433,20 +439,21 @@ export const siteConfig: SiteConfig = {
         title: "SkyFall",
         event: "Cal Hacks 13.0",
         result: "Winner — Best Use of SpacetimeDB",
-        caption: "Live 3D globe that forecasts which satellites and rocket bodies are re-entering, which debris pieces might survive, and where they could land. Runs GPU Monte Carlo physics with SpacetimeDB as the entire backend.",
-        images: [],
+        caption: "Live 3D globe that forecasts which satellites and rocket bodies are re-entering, which debris pieces might survive, and where they could land.",
+        images: [{src: space_time , alt: " cal_hacks " , aspectRatio: " 16 / 9" }
+],
         what: [],
         how: [],
         links: [
           { label: "Devpost", href: "https://devpost.com/software/skyfall-uca4i9" },
           { label: "GitHub", href: "https://github.com/bobbybendola/skyFall" },
-          { label: "Live App", href: "http://isitfalling.us" },
+          { label: "Live App", href: "https://www.youtube.com/watch?v=m9VnLBoztKQ" },
           { label: "YouTube", href: "https://www.youtube.com/watch?v=m9VnLBoztKQ" },
         ],
         teammates: [
-          { name: "Kevin Chhim", href: "" },
-          { name: "Christopher Chhim", href: "" },
-          { name: "Hank Li", href: "" },
+          { name: "Kevin Chhim", href: "https://www.linkedin.com/in/kevin-chhim/" },
+          { name: "Christopher Chhim", href: "https://www.linkedin.com/in/ly-christopher-chhim/" },
+          { name: "Hank Li", href: "https://www.linkedin.com/in/hank-li-51b626263/" },
         ],
       },
 
@@ -479,7 +486,7 @@ export const siteConfig: SiteConfig = {
         event: "ICSSC WebJam 2025",
         result: "Top 10",
         caption: "UCI campus marketplace prototype with location-based features, built with FastAPI, React, and SQLite.",
-        images: [],
+        images: [{src: ring_road  , alt: "ring_road" , aspectRatio: " 16 / 9" }],
         what: [],
         how: [],
         links: [
@@ -488,7 +495,8 @@ export const siteConfig: SiteConfig = {
           { label: "Live Demo", href: "https://uci-marketplace.vercel.app" },
         ],
         teammates: [
-          // TODO: add teammates (name + LinkedIn href)
+          { name: "Kyle Dang", href: "https://www.linkedin.com/in/kyle-k-dang/" },
+           { name: "Shrujan Sriram", href: "https://www.linkedin.com/in/shrujansriram/" },
         ],
       },
 
@@ -521,7 +529,7 @@ export const siteConfig: SiteConfig = {
         title: "Lumines",
         event: "UCI AWS Cloud Hacks 2026",
         caption: "Web app that turns any home address into an interactive 3D map of estimated solar generation and carbon footprint, compares you with nearby households, and simulates adding solar panels. React + TypeScript, Flask, AWS Location Service, Google Solar API, and Claude on AWS Bedrock.",
-        images: [],
+        images: [{src: lumines , alt: "lumines" , aspectRatio: " 16 / 9" }],
         what: [],
         how: [],
         links: [
@@ -531,7 +539,7 @@ export const siteConfig: SiteConfig = {
         ],
         teammates: [
           { name: "Shrujan Sriram", href: "https://www.linkedin.com/in/shrujansriram/" },
-          { name: "Ronan Nguyen", href: "" },
+          { name: "Ronan Nguyen", href: "https://www.linkedin.com/in/ronan-nguyen-0543a1387/" },
         ],
       },
 
@@ -564,7 +572,7 @@ export const siteConfig: SiteConfig = {
         title: "SkinID Dashboard",
         event: "CareTech 2026 Hackathon",
         caption: "Web app for capturing consistent, structured data about skin conditions: upload an image, draw a bounding box around a deformity, and the app computes its height and width in pixels, then submits it with metadata (age, sex, anatomical location) to a backend API.",
-        images: [],
+        images: [{src: engiTank  , alt: "caretech" , aspectRatio: " 16 / 9"}],
         what: [],
         how: [],
         links: [
@@ -572,7 +580,10 @@ export const siteConfig: SiteConfig = {
           { label: "GitHub", href: "https://github.com/bobbybendola/SkinID_Dashboard" },
           { label: "YouTube", href: "https://www.youtube.com/watch?v=K4zUuxcR23w" },
         ],
-        teammates: [],
+        teammates: [
+          { name: "Shrujan Sriram", href: "https://www.linkedin.com/in/shrujansriram/" },
+          { name: "Arjun Vivek", href: "https://www.linkedin.com/in/arjun-vivek/" }
+        ],
       },
     ],
   },
